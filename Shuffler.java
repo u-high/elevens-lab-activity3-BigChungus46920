@@ -89,7 +89,7 @@ public class Shuffler {
    int j =0;
    
     for( int k = values.length-1; k>0; k--){
-      pls= Math.random()*k;
+      pls= Math.random()*(k+1);
       
       j=(int)pls;
       System.out.println(j);

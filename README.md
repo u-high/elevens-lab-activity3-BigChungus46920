@@ -1,1 +1,1 @@
-3. It is not possible
+3. 1,1,0
