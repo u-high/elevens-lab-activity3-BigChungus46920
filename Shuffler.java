@@ -30,7 +30,7 @@ public class Shuffler {
 
   System.out.println("Results of " + SHUFFLE_COUNT +
          " consecutive efficient selection shuffles:");
-  int[] values2 = {0, 1, 2, 3};
+  int[] values2 = {1,2,3,4};
   for (int j = 1; j <= SHUFFLE_COUNT; j++) {
    selectionShuffle(values2);
    System.out.print("  " + j + ":");
@@ -84,14 +84,18 @@ public class Shuffler {
   */
  public static void selectionShuffle(int[] values) {
   /* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
-   int j =0;
+   double pls =0;
    int b =0;
+   int j =0;
    
     for( int k = values.length-1; k>0; k--){
-      j= (int)Math.random()*k;
-      values[j] = b;
+      pls= Math.random()*k;
       
+      j=(int)pls;
+      System.out.println(j);
+      b= values[k];
       values[k]=values[j];
+      values[j]=b;
       
     }
 
