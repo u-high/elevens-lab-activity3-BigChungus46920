@@ -90,9 +90,8 @@ public class Shuffler {
    
     for( int k = values.length-1; k>0; k--){
       pls= Math.random()*(k+1);
-      
       j=(int)pls;
-      System.out.println(j);
+      
       b= values[k];
       values[k]=values[j];
       values[j]=b;
